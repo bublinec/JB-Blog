@@ -6,7 +6,7 @@
   "license": "0BSD",
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop",
+    "develop": "env-cmd -f .env.development gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
@@ -19,11 +19,13 @@
     "@material-ui/styles": "^4.10.0",
     "@types/styled-components": "^5.1.3",
     "gatsby": "^2.24.63",
+    "gatsby-plugin-playground": "^1.0.6",
     "gatsby-plugin-sharp": "^2.6.36",
     "gatsby-plugin-styled-components": "^3.3.11",
     "gatsby-plugin-typescript": "^2.4.20",
     "gatsby-remark-images": "^3.3.30",
     "gatsby-remark-relative-images": "^2.0.2",
+    "gatsby-source-contentful": "^2.3.48",
     "gatsby-source-filesystem": "^2.3.30",
     "gatsby-transformer-remark": "^2.8.35",
     "react": "^16.12.0",
@@ -31,6 +33,7 @@
     "styled-components": "^5.2.0"
   },
   "devDependencies": {
+    "env-cmd": "^10.1.0",
     "prettier": "2.1.1"
   },
   "repository": {

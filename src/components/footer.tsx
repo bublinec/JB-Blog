@@ -6,7 +6,9 @@ const Footer = () => {
         <Box mt={10}>
             <Container >
                 <hr />
-                <p>Created by Juraj Bublinec, 2020</p>
+                <Grid container justify="center">
+                    <p>Created by Juraj Bublinec, 2020</p>
+                </Grid>
             </Container>
         </Box>
 
